@@ -935,159 +935,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Screw_Terminal_01x01"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Screw_Terminal_01x01"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "screw terminal"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Screw_Terminal_01x01_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -3704,6 +3551,12 @@
 		(uuid "48ebece8-6bde-4c12-99b8-fd2844357506")
 	)
 	(junction
+		(at 427.99 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c1e9694-b6d9-419e-b511-08e0f7dfb642")
+	)
+	(junction
 		(at 44.45 398.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3845,7 +3698,7 @@
 	)
 	(wire
 		(pts
-			(xy 403.86 54.61) (xy 412.75 54.61)
+			(xy 403.86 54.61) (xy 421.64 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3985,6 +3838,16 @@
 	)
 	(wire
 		(pts
+			(xy 433.07 50.8) (xy 427.99 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11ec70e1-44fe-4039-b6b7-acc874791453")
+	)
+	(wire
+		(pts
 			(xy 194.31 153.67) (xy 194.31 143.51)
 		)
 		(stroke
@@ -3992,6 +3855,16 @@
 			(type default)
 		)
 		(uuid "18899b37-cc37-4a1e-b6f6-1bd7a3663ee9")
+	)
+	(wire
+		(pts
+			(xy 421.64 50.8) (xy 421.64 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b12a431-6502-42f9-8039-991c98f27841")
 	)
 	(wire
 		(pts
@@ -4595,6 +4468,16 @@
 	)
 	(wire
 		(pts
+			(xy 427.99 50.8) (xy 421.64 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c5a241-5f14-4575-af67-8cd4b5247756")
+	)
+	(wire
+		(pts
 			(xy 27.94 92.71) (xy 27.94 97.79)
 		)
 		(stroke
@@ -4602,6 +4485,16 @@
 			(type default)
 		)
 		(uuid "57f52863-4164-49e1-84ad-e54ccba1e959")
+	)
+	(wire
+		(pts
+			(xy 427.99 105.41) (xy 427.99 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "584b3ff1-9365-474d-a6e4-e10caecad081")
 	)
 	(wire
 		(pts
@@ -5025,7 +4918,7 @@
 	)
 	(wire
 		(pts
-			(xy 406.4 105.41) (xy 415.29 105.41)
+			(xy 406.4 105.41) (xy 427.99 105.41)
 		)
 		(stroke
 			(width 0)
@@ -6043,16 +5936,6 @@
 		)
 		(uuid "47da128f-3dd5-4cc0-b18b-6ff0b24a1ab3")
 	)
-	(label "V_BAT"
-		(at 415.29 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "48768699-6531-4edc-8f92-534a76eb168d")
-	)
 	(label "D2{slash}GPIO3"
 		(at 290.83 113.03 0)
 		(effects
@@ -6252,16 +6135,6 @@
 			(justify left bottom)
 		)
 		(uuid "76490d1f-4a36-431c-9bb1-8a28c32a4436")
-	)
-	(label "V_BAT"
-		(at 412.75 54.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7695ad03-581f-4acb-b6bc-42ced15e0293")
 	)
 	(label "S5"
 		(at 106.68 74.93 0)
@@ -8700,6 +8573,84 @@
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 433.07 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e5012df-be5b-4e2a-b441-6e70bbe9b219")
+		(property "Reference" "#PWR066"
+			(at 433.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 433.07 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 433.07 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 433.07 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 433.07 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20cc2503-5746-4b9d-a1b3-5d478f285932")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -13268,6 +13219,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 438.15 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a99a64c7-a74c-4360-b501-322877d54da3")
+		(property "Reference" "J6"
+			(at 440.69 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 440.69 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+			(at 438.15 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 438.15 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9aba07bf-49a8-43d3-ad0d-f4c11c24b40b")
+		)
+		(pin "1"
+			(uuid "9efdad4f-1f1b-4db8-87ee-e56db942d958")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "C_3")
 		(lib_id "Device:C")
 		(at 154.94 342.9 90)
@@ -15071,85 +15104,6 @@
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
 					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x01")
-		(at 417.83 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db4c1c45-ede7-4208-b06f-e8c08cf09ef7")
-		(property "Reference" "J6"
-			(at 420.37 53.3399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x01"
-			(at 420.37 55.8799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 417.83 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 417.83 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 417.83 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a3698957-8929-401a-84b0-2a3bed140840")
-		)
-		(instances
-			(project "smart_insole"
-				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "J6")
 					(unit 1)
 				)
 			)
