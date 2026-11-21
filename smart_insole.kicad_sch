@@ -2338,12 +2338,200 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Switch:SW_SPDT"
 			(pin_names
 				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPDT"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPDT_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.651 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_FET:AO3400A"
+			(pin_names
+				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2351,7 +2539,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 5.08 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2361,8 +2549,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
+			(property "Value" "AO3400A"
+				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2372,8 +2560,21 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+				(at 5.08 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2381,20 +2582,10 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2405,40 +2596,7 @@
 					)
 				)
 			)
-			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2449,7 +2607,18 @@
 					)
 				)
 			)
-			(symbol "NMOS_0_1"
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AO3400A_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -2593,7 +2762,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 2.921 0.381) (xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -2616,11 +2785,11 @@
 					)
 				)
 			)
-			(symbol "NMOS_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
+			(symbol "AO3400A_1_1"
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "D"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2635,10 +2804,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "G"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2654,9 +2823,310 @@
 					)
 				)
 				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_FET:Q_PMOS_GSD"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_PMOS_GSD"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "P-MOSFET transistor, gate/source/drain"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Q_PMOS_GSD_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 -0.381) (xy 3.683 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_PMOS_GSD_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 2.54 -5.08 90)
 					(length 2.54)
 					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3569,6 +4039,17 @@
 		)
 		(uuid "77c03927-fbb1-44eb-85bc-62df8093e622")
 	)
+	(text "SW1 ON (pin 2-1): gates to GND -> both FETs on. OFF: R25 pulls gates high -> off"
+		(exclude_from_sim no)
+		(at 435.61 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12df20f9-89f0-430e-95a3-848695030b54")
+	)
 	(text "MOTOR CHIPS"
 		(exclude_from_sim no)
 		(at 389.382 30.988 0)
@@ -3578,6 +4059,61 @@
 			)
 		)
 		(uuid "2548e31d-4a57-43fd-aefd-8b1a1e66dec4")
+	)
+	(text "BATTERY INPUT"
+		(exclude_from_sim no)
+		(at 455.168 32.512 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left bottom)
+		)
+		(uuid "26a9ff78-72df-4b4c-83d0-dd4743ba4e6e")
+	)
+	(text "Charging: USB plugged in + SW1 ON (XIAO charger feeds back through Q4/Q3)"
+		(exclude_from_sim no)
+		(at 435.61 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66d50973-5d72-4862-8185-0e1081405e69")
+	)
+	(text "Q3: reverse-polarity protection (body diode + Vgs turns it on; reversed battery = off)"
+		(exclude_from_sim no)
+		(at 435.61 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6afd8d79-e6a1-4642-ba28-be77eb2511fb")
+	)
+	(text "J7: solder short wires to XIAO back pads, pin 1 = BAT+, pin 2 = BAT-"
+		(exclude_from_sim no)
+		(at 435.61 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73be7096-f1d2-4ba6-85fd-d91ad8fcb750")
+	)
+	(text "Q4: power switch. Q3/Q4 back-to-back so OFF blocks both directions"
+		(exclude_from_sim no)
+		(at 435.61 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "84c28474-a637-4e0f-866a-d9b408436bf4")
 	)
 	(text "ADC & MCU\n"
 		(exclude_from_sim no)
@@ -3688,6 +4224,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4dbb328b-e19b-4618-9e80-a19039a6ff1f")
+	)
+	(junction
+		(at 452.12 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57715c4b-acfa-483f-9dcc-bffcd69276a4")
 	)
 	(junction
 		(at 195.58 290.83)
@@ -3814,6 +4356,10 @@
 		(uuid "11fd98e5-2184-445c-ac76-cc7b59ce1455")
 	)
 	(no_connect
+		(at 463.55 73.66)
+		(uuid "555aded8-3aab-4544-8584-94cf3f32b757")
+	)
+	(no_connect
 		(at 257.81 135.89)
 		(uuid "64f4b6c3-2609-49e3-a995-4bd547c071e2")
 	)
@@ -3868,6 +4414,16 @@
 			(type default)
 		)
 		(uuid "04c768ab-a90b-44ac-99ef-d3e254e0fdc7")
+	)
+	(wire
+		(pts
+			(xy 466.09 86.36) (xy 473.71 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07f4819c-c849-47a2-8fb3-373d25188e90")
 	)
 	(wire
 		(pts
@@ -3971,7 +4527,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 50.8) (xy 427.99 50.8)
+			(xy 427.99 50.8) (xy 438.15 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3988,6 +4544,16 @@
 			(type default)
 		)
 		(uuid "18899b37-cc37-4a1e-b6f6-1bd7a3663ee9")
+	)
+	(wire
+		(pts
+			(xy 463.55 68.58) (xy 468.63 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19730418-c121-4d21-b1b5-5582360ace29")
 	)
 	(wire
 		(pts
@@ -4121,6 +4687,16 @@
 	)
 	(wire
 		(pts
+			(xy 468.63 50.8) (xy 473.71 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27e1bd3e-d64d-4dd2-b209-31610d0bf4b6")
+	)
+	(wire
+		(pts
 			(xy 76.2 151.13) (xy 107.95 151.13)
 		)
 		(stroke
@@ -4138,6 +4714,16 @@
 			(type default)
 		)
 		(uuid "28225c23-ea22-4678-bfd4-4db899b84f47")
+	)
+	(wire
+		(pts
+			(xy 443.23 58.42) (xy 443.23 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29d0f241-7772-43bc-bfb6-5b00b982c8db")
 	)
 	(wire
 		(pts
@@ -4428,6 +5014,16 @@
 			(type default)
 		)
 		(uuid "409ae657-3699-48dd-a636-c97c7f29e6df")
+	)
+	(wire
+		(pts
+			(xy 448.31 71.12) (xy 453.39 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41099a26-f616-45f4-b13e-24c9c4bb1641")
 	)
 	(wire
 		(pts
@@ -4798,6 +5394,16 @@
 			(type default)
 		)
 		(uuid "6a4bced3-279c-4ee8-aa8e-fdbb53534a4b")
+	)
+	(wire
+		(pts
+			(xy 452.12 60.96) (xy 452.12 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ba22623-621d-4fd8-9d01-ff32d15a5d21")
 	)
 	(wire
 		(pts
@@ -5491,6 +6097,16 @@
 	)
 	(wire
 		(pts
+			(xy 452.12 50.8) (xy 458.47 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1131c51-48a3-4cb1-b4ab-117f3a6c5d68")
+	)
+	(wire
+		(pts
 			(xy 147.32 290.83) (xy 147.32 270.51)
 		)
 		(stroke
@@ -5558,6 +6174,16 @@
 			(type default)
 		)
 		(uuid "dbb12b6d-c573-4ae7-8931-1ec5224e371e")
+	)
+	(wire
+		(pts
+			(xy 448.31 50.8) (xy 452.12 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc073e50-af59-4e74-9fd0-83e1f4786db2")
 	)
 	(wire
 		(pts
@@ -5681,6 +6307,16 @@
 	)
 	(wire
 		(pts
+			(xy 463.55 43.18) (xy 463.55 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec23adfe-b07e-46ec-a6ac-92981c3019ef")
+	)
+	(wire
+		(pts
 			(xy 92.71 396.24) (xy 99.06 396.24)
 		)
 		(stroke
@@ -5758,6 +6394,16 @@
 			(type default)
 		)
 		(uuid "f56fc540-8cac-44f0-90fd-9db05d5831f9")
+	)
+	(wire
+		(pts
+			(xy 452.12 50.8) (xy 452.12 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5e2d349-253e-4821-99ca-4998c072e1b4")
 	)
 	(wire
 		(pts
@@ -5979,6 +6625,26 @@
 		)
 		(uuid "1c738c4c-e46c-40cc-b461-20ee0f362f4d")
 	)
+	(label "BAT_IN"
+		(at 468.63 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1cfbd585-36a7-4c8f-bea9-811664b1e616")
+	)
+	(label "SW_GATE"
+		(at 448.31 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "256d44f9-068d-44c8-9570-a1e7b9d8ba7d")
+	)
 	(label "S2"
 		(at 106.68 82.55 0)
 		(effects
@@ -6018,6 +6684,16 @@
 			(justify right bottom)
 		)
 		(uuid "2fbf3a0a-9709-4c35-baa7-7841e5c1c82e")
+	)
+	(label "SW_GATE"
+		(at 452.12 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3170afc6-cde7-45d7-a4e0-faf71c2c91e9")
 	)
 	(label "SENS_GND"
 		(at 128.27 292.1 180)
@@ -6309,6 +6985,16 @@
 		)
 		(uuid "79b3dc34-d216-4a7b-a158-45d50948009b")
 	)
+	(label "V_BAT"
+		(at 433.07 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "80f25962-4256-470b-ae08-58fc05ff445a")
+	)
 	(label "DO{slash}GPIO1"
 		(at 288.29 62.23 0)
 		(effects
@@ -6358,6 +7044,26 @@
 			(justify right bottom)
 		)
 		(uuid "9704be8b-5ba3-4d03-80cf-a9cb135cfc47")
+	)
+	(label "SW_GATE"
+		(at 463.55 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b6c15fa-412a-4e3e-aa34-04c6962b7f53")
+	)
+	(label "BAT_PROT"
+		(at 448.31 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b9f4d83-3734-4a40-8a01-00c47339daff")
 	)
 	(label "S11"
 		(at 107.95 143.51 0)
@@ -6479,6 +7185,16 @@
 		)
 		(uuid "bc50cf1f-b5b6-4294-866d-a653005dd551")
 	)
+	(label "V_BAT"
+		(at 466.09 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd6d4e2c-9646-47b4-8506-a62d94d91730")
+	)
 	(label "S1"
 		(at 106.68 85.09 0)
 		(effects
@@ -6558,6 +7274,16 @@
 			(justify left bottom)
 		)
 		(uuid "d6b120ae-7adf-4cca-bc49-77733902e75a")
+	)
+	(label "SW_GATE"
+		(at 443.23 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d99d81b2-f6a5-47ff-aae7-1313a2eddacf")
 	)
 	(label "S12"
 		(at 38.1 398.78 180)
@@ -6920,6 +7646,101 @@
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:Q_PMOS_GSD")
+		(at 443.23 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0c99caa4-0766-4e5b-87e9-d8ac2b996cdd")
+		(property "Reference" "Q4"
+			(at 442.976 45.974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3401A"
+			(at 445.262 46.736 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 443.23 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 443.23 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "P-MOSFET, 30V 4A, SOT-23"
+			(at 443.23 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15127"
+			(at 443.23 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9ce5bbad-7f54-45d6-89ad-56714c27138c")
+		)
+		(pin "2"
+			(uuid "f41664df-58c4-4afb-a15a-abbec0361ca8")
+		)
+		(pin "3"
+			(uuid "4fa2af9d-81b0-4f3c-8051-7a00a6f2de34")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -8368,7 +9189,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+		(property "Footprint" "footprint:CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN"
 			(at 401.32 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8490,6 +9311,85 @@
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 473.71 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "421d7b95-dde7-4d5b-a488-793345560b3c")
+		(property "Reference" "#PWR074"
+			(at 473.71 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 473.71 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 473.71 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 473.71 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 473.71 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3df2cb0-0346-4eca-8721-51a7322d2384")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -8662,7 +9562,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "43e6c596-d0eb-4f44-84d6-d263e3c5a88b")
 		(property "Reference" "#FLG01"
 			(at 354.33 100.965 0)
@@ -8676,7 +9575,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 354.33 97.79 0)
+			(at 359.156 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8888,8 +9787,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 288.29 331.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a717fa4-7207-4c7b-95ae-f6e06d4a5723")
+		(property "Reference" "Q2"
+			(at 294.64 330.1999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 294.64 332.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 293.37 333.375 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 293.37 335.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 288.29 331.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0a98600f-8a99-43d3-ab67-8de7f439be20")
+		)
+		(pin "1"
+			(uuid "52c76a17-33a1-4cb6-ace7-1ef9349d3a83")
+		)
+		(pin "3"
+			(uuid "3829a6d0-6a75-4dbc-af73-edf3e5322e1d")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 433.07 53.34 0)
+		(at 473.71 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8900,7 +9887,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e5012df-be5b-4e2a-b441-6e70bbe9b219")
 		(property "Reference" "#PWR066"
-			(at 433.07 59.69 0)
+			(at 473.71 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8911,7 +9898,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 433.07 58.42 0)
+			(at 473.71 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8921,7 +9908,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 433.07 53.34 0)
+			(at 473.71 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8932,7 +9919,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 433.07 53.34 0)
+			(at 473.71 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8943,7 +9930,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 433.07 53.34 0)
+			(at 473.71 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9243,7 +10230,7 @@
 				)
 			)
 		)
-		(property "Footprint" "motor_extract:SON50P300X200X80-13N"
+		(property "Footprint" "smart_insole_lib:SON50P300X200X80-13N"
 			(at 326.39 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -11542,7 +12529,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+		(property "Footprint" "footprint:CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN"
 			(at 387.35 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12075,6 +13062,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 468.63 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8505e1e8-6d97-4116-9988-c238e2316a6e")
+		(property "Reference" "#PWR073"
+			(at 468.63 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 468.63 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 468.63 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 468.63 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 468.63 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2ea8933-a0af-4d4f-b3f3-68e1425a942b")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 199.39 115.57 0)
 		(unit 1)
@@ -12323,6 +13389,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 452.12 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8c2c421a-f758-4f4e-a34e-28994f5f57ac")
+		(property "Reference" "R25"
+			(at 455.93 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 455.93 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprint:R0402"
+			(at 452.12 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 452.12 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 452.12 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 452.12 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3fb35567-680a-454d-b24c-debf39795fcc")
+		)
+		(pin "2"
+			(uuid "ce8755a5-5c23-400d-bc52-db01079f8047")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "C_2")
 		(lib_id "Device:C")
 		(at 351.79 99.06 0)
@@ -12333,10 +13491,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8d9f98f9-007e-4beb-8a47-925716dc3e13")
 		(property "Reference" "C9"
-			(at 355.6 97.7899 0)
+			(at 343.916 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12347,7 +13504,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 355.6 100.3299 0)
+			(at 343.916 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12913,7 +14070,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+		(property "Footprint" "footprint:CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN"
 			(at 401.32 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -13529,7 +14686,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 438.15 50.8 0)
+		(at 478.79 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13540,7 +14697,7 @@
 		(fields_autoplaced yes)
 		(uuid "a99a64c7-a74c-4360-b501-322877d54da3")
 		(property "Reference" "J6"
-			(at 440.69 50.7999 0)
+			(at 481.33 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13551,7 +14708,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 440.69 53.3399 0)
+			(at 481.33 53.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13561,8 +14718,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
-			(at 438.15 50.8 0)
+		(property "Footprint" "footprint:CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN"
+			(at 478.79 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13573,7 +14730,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 438.15 50.8 0)
+			(at 478.79 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13584,7 +14741,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 438.15 50.8 0)
+			(at 478.79 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13931,6 +15088,101 @@
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:Q_PMOS_GSD")
+		(at 463.55 48.26 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b37e8fc3-d052-4bff-9dfd-1ee76d1a36e5")
+		(property "Reference" "Q3"
+			(at 466.09 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3401A"
+			(at 466.09 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 463.55 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 463.55 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "P-MOSFET, 30V 4A, SOT-23"
+			(at 463.55 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15127"
+			(at 463.55 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b1118271-b987-4009-84fa-7679d8583505")
+		)
+		(pin "2"
+			(uuid "383a9017-0662-4d73-872e-864f5bdb024d")
+		)
+		(pin "3"
+			(uuid "f7950fd6-95c1-4735-b421-641e924f0120")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -14334,6 +15586,101 @@
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 458.47 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c20c3153-84b9-4038-8e9d-ab1c04a8e5dd")
+		(property "Reference" "SW1"
+			(at 455.93 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MSK12C02"
+			(at 455.93 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "smart_insole_lib:SW-TH_MSK12C02"
+			(at 458.47 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 458.47 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Slide switch SPDT, 50mA (switches MOSFET gates only)"
+			(at 458.47 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C431540"
+			(at 458.47 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4e330fb-16c4-414c-a117-5910b50de5e8")
+		)
+		(pin "2"
+			(uuid "0485c78c-321b-4ce1-9225-22ab6d044ca4")
+		)
+		(pin "3"
+			(uuid "a9664abe-0622-4f6f-8ebd-9b6d9fd342a7")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -14976,122 +16323,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 288.29 331.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0c08ca7-dd67-4a6a-80ca-c29973536d8f")
-		(property "Reference" "Q1"
-			(at 294.64 331.47 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 297.18 331.47 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:Nordic_AQFN-94-1EP_7x7mm_P0.4mm"
-			(at 293.37 328.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 288.29 344.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 288.29 331.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 288.29 348.615 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 288.29 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 288.29 346.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "f5fd36fb-ea7b-442f-8602-27ea2cc3b3f3")
-		)
-		(pin "1"
-			(uuid "78ede918-5e05-4116-a0fc-6e40fc9b8a79")
-		)
-		(pin "2"
-			(uuid "37dfe038-bdc2-4fd4-8855-c0aa13088c33")
-		)
-		(instances
-			(project "smart_insole"
-				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 387.35 134.62 0)
 		(unit 1)
@@ -15125,7 +16356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+		(property "Footprint" "footprint:CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN"
 			(at 387.35 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -16712,7 +17943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "motor_extract:SON50P300X200X80-13N"
+		(property "Footprint" "smart_insole_lib:SON50P300X200X80-13N"
 			(at 323.85 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -17013,6 +18244,87 @@
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 478.79 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ff67836f-8fe5-4cb4-adf7-7097ccc51955")
+		(property "Reference" "J7"
+			(at 481.33 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "XIAO_BAT"
+			(at 481.33 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 478.79 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 478.79 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Wire pads to XIAO BAT+ (1) / BAT- (2)"
+			(at 478.79 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3a53edf-b785-4fa3-b578-9042a28cdfb3")
+		)
+		(pin "2"
+			(uuid "b60e8629-10a2-4a28-a947-d0cc4d317afc")
+		)
+		(instances
+			(project "smart_insole"
+				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
+					(reference "J7")
 					(unit 1)
 				)
 			)

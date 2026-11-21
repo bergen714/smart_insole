@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "smart_insole_lib") (type "KiCad") (uri "${KIPRJMOD}/smart_insole_lib.pretty") (options "") (descr "Project footprints"))
+)
