@@ -4039,17 +4039,6 @@
 		)
 		(uuid "77c03927-fbb1-44eb-85bc-62df8093e622")
 	)
-	(text "SW1 ON (pin 2-1): gates to GND -> both FETs on. OFF: R25 pulls gates high -> off"
-		(exclude_from_sim no)
-		(at 435.61 106.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "12df20f9-89f0-430e-95a3-848695030b54")
-	)
 	(text "MOTOR CHIPS"
 		(exclude_from_sim no)
 		(at 389.382 30.988 0)
@@ -4070,50 +4059,6 @@
 			(justify left bottom)
 		)
 		(uuid "26a9ff78-72df-4b4c-83d0-dd4743ba4e6e")
-	)
-	(text "Charging: USB plugged in + SW1 ON (XIAO charger feeds back through Q4/Q3)"
-		(exclude_from_sim no)
-		(at 435.61 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "66d50973-5d72-4862-8185-0e1081405e69")
-	)
-	(text "Q3: reverse-polarity protection (body diode + Vgs turns it on; reversed battery = off)"
-		(exclude_from_sim no)
-		(at 435.61 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6afd8d79-e6a1-4642-ba28-be77eb2511fb")
-	)
-	(text "J7: solder short wires to XIAO back pads, pin 1 = BAT+, pin 2 = BAT-"
-		(exclude_from_sim no)
-		(at 435.61 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "73be7096-f1d2-4ba6-85fd-d91ad8fcb750")
-	)
-	(text "Q4: power switch. Q3/Q4 back-to-back so OFF blocks both directions"
-		(exclude_from_sim no)
-		(at 435.61 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "84c28474-a637-4e0f-866a-d9b408436bf4")
 	)
 	(text "ADC & MCU\n"
 		(exclude_from_sim no)
@@ -4356,7 +4301,7 @@
 		(uuid "11fd98e5-2184-445c-ac76-cc7b59ce1455")
 	)
 	(no_connect
-		(at 463.55 73.66)
+		(at 469.9 80.01)
 		(uuid "555aded8-3aab-4544-8584-94cf3f32b757")
 	)
 	(no_connect
@@ -4417,7 +4362,7 @@
 	)
 	(wire
 		(pts
-			(xy 466.09 86.36) (xy 473.71 86.36)
+			(xy 485.14 83.82) (xy 492.76 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4547,7 +4492,7 @@
 	)
 	(wire
 		(pts
-			(xy 463.55 68.58) (xy 468.63 68.58)
+			(xy 469.9 74.93) (xy 474.98 74.93)
 		)
 		(stroke
 			(width 0)
@@ -5017,7 +4962,7 @@
 	)
 	(wire
 		(pts
-			(xy 448.31 71.12) (xy 453.39 71.12)
+			(xy 454.66 77.47) (xy 459.74 77.47)
 		)
 		(stroke
 			(width 0)
@@ -6636,7 +6581,7 @@
 		(uuid "1cfbd585-36a7-4c8f-bea9-811664b1e616")
 	)
 	(label "SW_GATE"
-		(at 448.31 71.12 180)
+		(at 454.66 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7186,7 +7131,7 @@
 		(uuid "bc50cf1f-b5b6-4294-866d-a653005dd551")
 	)
 	(label "V_BAT"
-		(at 466.09 86.36 0)
+		(at 485.14 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7338,7 +7283,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0686518a-54e2-454c-83e1-24e8f0f6f184")
-		(property "Reference" "C10"
+		(property "Reference" "C1"
 			(at 50.7999 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7402,7 +7347,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C10")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -7420,7 +7365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07923eb5-a27c-40af-a35c-7aea11617052")
-		(property "Reference" "R13"
+		(property "Reference" "R6"
 			(at 110.4899 325.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7484,7 +7429,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R13")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -7502,7 +7447,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b31bb4a-74de-4c7c-b944-60199c9a0bef")
-		(property "Reference" "R24"
+		(property "Reference" "R16"
 			(at 210.8199 393.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7566,7 +7511,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R24")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -8445,7 +8390,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cc62360-ecd7-4f7c-afbf-251af9de6a15")
-		(property "Reference" "C17"
+		(property "Reference" "C10"
 			(at 104.1399 339.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8509,7 +8454,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C17")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -8685,7 +8630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "218bde9a-7a3b-4e72-bc91-aa2f599f5f53")
-		(property "Reference" "C28"
+		(property "Reference" "C15"
 			(at 153.6699 372.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8749,7 +8694,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C28")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -8925,7 +8870,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fc57d6a-6c97-4d9f-9c4f-fb9c56aaf02e")
-		(property "Reference" "R20"
+		(property "Reference" "R12"
 			(at 209.5499 359.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8989,7 +8934,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R20")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -9085,7 +9030,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3216f28a-811f-4d24-8e9e-ecd42a7f572d")
-		(property "Reference" "R14"
+		(property "Reference" "R7"
 			(at 158.7499 323.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9149,7 +9094,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R14")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -9318,7 +9263,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 473.71 88.9 0)
+		(at 492.76 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9328,7 +9273,7 @@
 		(dnp no)
 		(uuid "421d7b95-dde7-4d5b-a488-793345560b3c")
 		(property "Reference" "#PWR074"
-			(at 473.71 95.25 0)
+			(at 492.76 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9340,7 +9285,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 473.71 92.71 0)
+			(at 492.76 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9351,7 +9296,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 473.71 88.9 0)
+			(at 492.76 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9362,7 +9307,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 473.71 88.9 0)
+			(at 492.76 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9373,7 +9318,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 473.71 88.9 0)
+			(at 492.76 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9964,7 +9909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f4df2d5-3101-4c6e-83ee-503307aebd20")
-		(property "Reference" "R18"
+		(property "Reference" "R11"
 			(at 157.4799 360.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10028,7 +9973,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R18")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -10046,7 +9991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "511c34ef-ec2d-49f8-bae5-6e6dde18ab17")
-		(property "Reference" "R22"
+		(property "Reference" "R14"
 			(at 110.4899 393.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10110,7 +10055,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R22")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -10128,7 +10073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5198c73a-6c3c-4432-a379-c4c9a8bc8b32")
-		(property "Reference" "R23"
+		(property "Reference" "R15"
 			(at 157.4799 393.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10192,7 +10137,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R23")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -10690,7 +10635,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5448953a-6030-4337-8384-61f0ee8abf2c")
-		(property "Reference" "C23"
+		(property "Reference" "C14"
 			(at 106.6799 372.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10754,7 +10699,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C23")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -11007,7 +10952,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5afeb56e-dcf7-4888-8684-ca20e342af8f")
-		(property "Reference" "R19"
+		(property "Reference" "R9"
 			(at 57.1499 363.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11071,7 +11016,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R19")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -11545,7 +11490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6153d653-339a-4298-b99b-aefec19d96ff")
-		(property "Reference" "R21"
+		(property "Reference" "R13"
 			(at 55.8799 396.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11609,7 +11554,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R21")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -11706,7 +11651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "639e7e15-9d37-49d5-8f8a-4a190282a3dc")
-		(property "Reference" "C5"
+		(property "Reference" "C17"
 			(at 31.75 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11770,7 +11715,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C5")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -11868,7 +11813,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6542c77b-de08-4981-88d4-a1d97108c35a")
-		(property "Reference" "C22"
+		(property "Reference" "C13"
 			(at 52.0699 374.65 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11932,7 +11877,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C22")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -11950,7 +11895,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6625b48d-d981-4f2b-b626-a8c06f4c04e8")
-		(property "Reference" "R17"
+		(property "Reference" "R5"
 			(at 54.6099 326.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12014,7 +11959,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R17")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -12032,7 +11977,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c9e5200-3d8a-4f01-912a-5fdb0c6c9991")
-		(property "Reference" "R10"
+		(property "Reference" "R2"
 			(at 113.0299 289.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12096,7 +12041,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R10")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -12590,7 +12535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b6ee88b-56cf-4eca-9d77-71a8c81e3eda")
-		(property "Reference" "C24"
+		(property "Reference" "C22"
 			(at 388.62 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12654,7 +12599,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C24")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -12752,7 +12697,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d02ce0e-b49c-4c40-8a40-f5db89259301")
-		(property "Reference" "C29"
+		(property "Reference" "C16"
 			(at 207.0099 372.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12816,7 +12761,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C29")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -12913,7 +12858,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e418e70-2c6e-44ef-b2a0-9c9c7b1c5037")
-		(property "Reference" "C13"
+		(property "Reference" "C4"
 			(at 203.1999 266.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12977,7 +12922,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C13")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -13063,7 +13008,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 468.63 68.58 0)
+		(at 474.98 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13073,7 +13018,7 @@
 		(dnp no)
 		(uuid "8505e1e8-6d97-4116-9988-c238e2316a6e")
 		(property "Reference" "#PWR073"
-			(at 468.63 74.93 0)
+			(at 474.98 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13085,7 +13030,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 468.63 72.39 0)
+			(at 474.98 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13096,7 +13041,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 468.63 68.58 0)
+			(at 474.98 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13107,7 +13052,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 468.63 68.58 0)
+			(at 474.98 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13118,7 +13063,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 468.63 68.58 0)
+			(at 474.98 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13152,7 +13097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86044180-c4b9-4ee6-bd3d-de8b5c172ed8")
-		(property "Reference" "R5"
+		(property "Reference" "R18"
 			(at 201.93 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13216,7 +13161,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R5")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -13235,7 +13180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8732630f-002b-45b1-ae33-9906ea92c1cb")
-		(property "Reference" "C27"
+		(property "Reference" "C26"
 			(at 410.21 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13299,7 +13244,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C27")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -13318,7 +13263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87f83b45-602a-4f6b-a86c-5c2d50aba906")
-		(property "Reference" "C16"
+		(property "Reference" "C8"
 			(at 203.1999 304.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13382,7 +13327,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C16")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -13399,7 +13344,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c2c421a-f758-4f4e-a34e-28994f5f57ac")
-		(property "Reference" "R25"
+		(property "Reference" "R20"
 			(at 455.93 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13474,7 +13419,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R25")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -13492,7 +13437,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d9f98f9-007e-4beb-8a47-925716dc3e13")
-		(property "Reference" "C9"
+		(property "Reference" "C24"
 			(at 343.916 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13556,7 +13501,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C9")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -13575,7 +13520,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8eae63bd-dfe7-4548-b20f-9eac1e2e5b63")
-		(property "Reference" "C18"
+		(property "Reference" "C5"
 			(at 50.7999 304.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13639,7 +13584,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C18")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -14208,7 +14153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b6da25c-4d16-4c12-8528-999385a48153")
-		(property "Reference" "R12"
+		(property "Reference" "R4"
 			(at 207.0099 288.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14272,7 +14217,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R12")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -14291,7 +14236,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9bd4a1bf-88be-416e-b593-a7e03868610b")
-		(property "Reference" "C12"
+		(property "Reference" "C3"
 			(at 154.9399 266.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14355,7 +14300,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C12")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -14453,7 +14398,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1df1f63-2551-4562-a2a7-161c96da9ab5")
-		(property "Reference" "C8"
+		(property "Reference" "C21"
 			(at 353.06 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14517,7 +14462,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C8")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -14535,7 +14480,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4804bc8-8887-47a7-b704-8d6a6943a458")
-		(property "Reference" "R6"
+		(property "Reference" "R17"
 			(at 196.85 156.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14599,7 +14544,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R6")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -14857,7 +14802,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab6fd7ba-52c5-446c-a201-c618497afb86")
-		(property "Reference" "C19"
+		(property "Reference" "C11"
 			(at 153.6699 339.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14921,7 +14866,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C19")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -14940,7 +14885,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "acbff7b9-f823-4410-968d-9d5845ea16fe")
-		(property "Reference" "C11"
+		(property "Reference" "C2"
 			(at 109.2199 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15004,7 +14949,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C11")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -15023,7 +14968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad7bb908-c752-4f35-a158-cbcb5517a745")
-		(property "Reference" "C6"
+		(property "Reference" "C19"
 			(at 27.94 163.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15087,7 +15032,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C6")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -15105,7 +15050,7 @@
 		(dnp no)
 		(uuid "b37e8fc3-d052-4bff-9dfd-1ee76d1a36e5")
 		(property "Reference" "Q3"
-			(at 466.09 57.15 0)
+			(at 459.74 44.958 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15116,7 +15061,7 @@
 			)
 		)
 		(property "Value" "AO3401A"
-			(at 466.09 59.69 0)
+			(at 466.598 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15279,7 +15224,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b544a39e-36d4-4c5e-b02f-a8ac06c8c9e9")
-		(property "Reference" "C20"
+		(property "Reference" "C9"
 			(at 53.3399 341.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15343,7 +15288,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C20")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -15439,7 +15384,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b82a8509-4c19-4f48-a2eb-11cafa8f7911")
-		(property "Reference" "R11"
+		(property "Reference" "R3"
 			(at 158.7499 288.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15503,7 +15448,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R11")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -15521,7 +15466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c00d0d69-bb41-4c75-9371-e0cde003664e")
-		(property "Reference" "R8"
+		(property "Reference" "R1"
 			(at 54.6099 289.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15585,7 +15530,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R8")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -15593,7 +15538,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPDT")
-		(at 458.47 71.12 0)
+		(at 464.82 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15603,7 +15548,7 @@
 		(dnp no)
 		(uuid "c20c3153-84b9-4038-8e9d-ab1c04a8e5dd")
 		(property "Reference" "SW1"
-			(at 455.93 64.77 0)
+			(at 462.28 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15614,7 +15559,7 @@
 			)
 		)
 		(property "Value" "MSK12C02"
-			(at 455.93 78.74 0)
+			(at 462.28 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15625,7 +15570,7 @@
 			)
 		)
 		(property "Footprint" "smart_insole_lib:SW-TH_MSK12C02"
-			(at 458.47 71.12 0)
+			(at 464.82 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15636,7 +15581,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 458.47 71.12 0)
+			(at 464.82 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15647,7 +15592,7 @@
 			)
 		)
 		(property "Description" "Slide switch SPDT, 50mA (switches MOSFET gates only)"
-			(at 458.47 71.12 0)
+			(at 464.82 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15658,7 +15603,7 @@
 			)
 		)
 		(property "LCSC" "C431540"
-			(at 458.47 71.12 0)
+			(at 464.82 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15934,7 +15879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5eeae64-08c9-482d-9b37-cf7580c8c303")
-		(property "Reference" "C25"
+		(property "Reference" "C23"
 			(at 407.67 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15998,7 +15943,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C25")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -16016,7 +15961,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cac4e832-c3b4-4b76-b18f-b6772d2116fb")
-		(property "Reference" "R16"
+		(property "Reference" "R10"
 			(at 107.9499 360.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16080,7 +16025,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R16")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -16416,7 +16361,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2fb4db3-ebce-495f-ab65-cfaa116f2065")
-		(property "Reference" "C2"
+		(property "Reference" "C18"
 			(at 121.92 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16480,7 +16425,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C2")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -16577,7 +16522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6566f10-ca2e-431d-8f66-b0637b9622ae")
-		(property "Reference" "C15"
+		(property "Reference" "C7"
 			(at 154.9399 302.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16641,7 +16586,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C15")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -16659,7 +16604,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d702d3a2-27b9-4b01-99a1-12a8ecc55fca")
-		(property "Reference" "R9"
+		(property "Reference" "R19"
 			(at 267.97 317.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16721,7 +16666,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R9")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -16739,7 +16684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddb7ecfe-5556-4534-aa3f-f939f451b6de")
-		(property "Reference" "R15"
+		(property "Reference" "R8"
 			(at 207.0099 326.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16803,7 +16748,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "R15")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -17058,7 +17003,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e95a5848-5c9c-49f9-85fd-2291e52d12fe")
-		(property "Reference" "C26"
+		(property "Reference" "C25"
 			(at 391.16 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17122,7 +17067,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C26")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -17140,7 +17085,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea3ed625-d8af-49aa-8184-3534e881b0ef")
-		(property "Reference" "C1"
+		(property "Reference" "C20"
 			(at 128.27 130.8099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17204,7 +17149,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C1")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -17600,7 +17545,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f48dceeb-da5f-4d03-82ff-90a296795df6")
-		(property "Reference" "C14"
+		(property "Reference" "C6"
 			(at 106.6799 303.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17664,7 +17609,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C14")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -17841,7 +17786,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f625daed-ce34-4ea7-a56c-04cc47de6922")
-		(property "Reference" "C21"
+		(property "Reference" "C12"
 			(at 205.7399 337.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17905,7 +17850,7 @@
 		(instances
 			(project "smart_insole"
 				(path "/1c65d3d5-90eb-4f76-a38f-561f0fe89071"
-					(reference "C21")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -18251,7 +18196,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 478.79 86.36 0)
+		(at 497.84 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18261,7 +18206,7 @@
 		(dnp no)
 		(uuid "ff67836f-8fe5-4cb4-adf7-7097ccc51955")
 		(property "Reference" "J7"
-			(at 481.33 86.36 0)
+			(at 500.38 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18272,7 +18217,7 @@
 			)
 		)
 		(property "Value" "XIAO_BAT"
-			(at 481.33 88.9 0)
+			(at 500.38 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18283,7 +18228,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 478.79 86.36 0)
+			(at 497.84 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18294,7 +18239,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 478.79 86.36 0)
+			(at 497.84 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18305,7 +18250,7 @@
 			)
 		)
 		(property "Description" "Wire pads to XIAO BAT+ (1) / BAT- (2)"
-			(at 478.79 86.36 0)
+			(at 497.84 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
