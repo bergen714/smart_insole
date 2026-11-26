@@ -4039,6 +4039,16 @@
 		)
 		(uuid "77c03927-fbb1-44eb-85bc-62df8093e622")
 	)
+	(text "controlling data acquisition"
+		(exclude_from_sim no)
+		(at 273.558 300.228 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0aff014a-1d63-4f79-bc04-9edcfd0c3c46")
+	)
 	(text "MOTOR CHIPS"
 		(exclude_from_sim no)
 		(at 389.382 30.988 0)
@@ -4060,6 +4070,16 @@
 		)
 		(uuid "26a9ff78-72df-4b4c-83d0-dd4743ba4e6e")
 	)
+	(text "FPC connector from the FSRs.\n"
+		(exclude_from_sim no)
+		(at 427.736 243.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b3ff7d5e-9a02-46b6-ba68-977d5d264110")
+	)
 	(text "ADC & MCU\n"
 		(exclude_from_sim no)
 		(at 62.23 32.258 0)
@@ -4070,6 +4090,16 @@
 		)
 		(uuid "dc97839c-7afd-47e5-b9b6-62568d225e45")
 	)
+	(text "FSR --> FPC connector --> ADC"
+		(exclude_from_sim no)
+		(at 121.158 260.604 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "df380e26-f45d-418c-8b75-60bc65458765")
+	)
 	(text "SENSORS"
 		(exclude_from_sim no)
 		(at 52.578 248.92 0)
@@ -4079,6 +4109,16 @@
 			)
 		)
 		(uuid "e0bc3aea-04a2-47eb-b13b-5b73a51ca118")
+	)
+	(text "battery protection system, open ckt if wrong polarity."
+		(exclude_from_sim no)
+		(at 515.62 41.656 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f9c41551-eb24-4c33-8d5f-0b333b8fa7c2")
 	)
 	(junction
 		(at 151.13 120.65)
